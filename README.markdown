@@ -19,9 +19,9 @@ Linguagens suportadas
 Ruby
 ----
 
-gem install stomp
-gem install json
-ruby send.rb
+	gem install stomp
+	gem install json
+	ruby send.rb
 
 
 
