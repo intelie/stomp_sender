@@ -9,8 +9,19 @@ O protocolo STOMP é utilizado para enviar mensagens ao [ActiveMQ](http://active
 
 
 Linguagens suportadas
-------------------------
+---------------------
 
 * Python
 * Ruby
 * Perl
+
+
+Ruby
+----
+
+gem install stomp
+gem install json
+ruby send.rb
+
+
+
