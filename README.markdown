@@ -24,4 +24,8 @@ Ruby
 	ruby send.rb
 
 
+Perl
+----
 
+    cpan -i Net::Stomp
+	perl send.pl

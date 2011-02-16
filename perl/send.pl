@@ -3,7 +3,7 @@ use Net::Stomp;
 
 my $stomp = Net::Stomp->new( { hostname => 'localhost', port => '61613' } );
 my $headers = {
-    timestamp => 1294086840000,
+    timestamp => time*1000,
     destination => '/queue/events',
     eventtype => "cpu"
 };
@@ -15,3 +15,5 @@ my $frame = Net::Stomp::Frame->new({
 $stomp->connect();
 $stomp->send_frame($frame);
 $stomp->disconnect();
+
+
