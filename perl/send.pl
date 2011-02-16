@@ -13,6 +13,11 @@ my $frame = Net::Stomp::Frame->new({
         body => $body,
 });
 
-$stomp->connect;
-$stomp->send_frame($frame);
-$stomp->disconnect;
+eval {
+    $stomp->connect;
+    $stomp->send_frame($frame);
+    $stomp->disconnect;
+};
+if ($@) {
+    print "error: $@";
+};
