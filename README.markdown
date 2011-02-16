@@ -27,5 +27,5 @@ Ruby
 Perl
 ----
 
-    cpan -i Net::Stomp
+    cpan -i Net::Stomp JSON
 	perl send.pl
