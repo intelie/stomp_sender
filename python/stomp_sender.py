@@ -101,8 +101,6 @@ if __name__ == '__main__':
             value = dados[1].strip()
             headers[key] = value
         del params['headers']
-    else:
-        brokers = [('localhost', 61613)]
 
     try:
         send_message_via_stomp(brokers, headers, params)
